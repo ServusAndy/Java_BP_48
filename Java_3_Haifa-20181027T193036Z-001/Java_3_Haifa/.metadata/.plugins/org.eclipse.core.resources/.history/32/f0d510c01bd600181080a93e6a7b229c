@@ -1,0 +1,28 @@
+
+public class TestAgruments {
+
+	public static void main(String[] args) {
+		
+		System.out.println(args.length);
+		for(int i = 0; i < args.length; i++) {
+			switch(args[i]) {
+			case "Integer":
+				break;
+			case "Double":
+				break;
+			case "Float":
+				break;
+			case "Long":
+				break;
+			case "Byte":
+				break;
+			case "Character":
+				break;
+				default:
+					System.out.println("Wrong format!");
+			}
+		}
+
+	}
+
+}

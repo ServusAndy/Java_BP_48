@@ -1,0 +1,23 @@
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Integer number = new Integer(56);
+		Integer number2 = 54;
+		int res = number + number2;
+		System.out.println(res);
+		
+		Integer a = 56;
+		Integer b = 56;
+		boolean result = a == number;
+		System.out.println(result);
+		
+		System.out.println(Integer.MAX_VALUE);
+		int c = Integer.parseInt("456dsafgDSG");
+		System.out.println(b + c);
+		
+
+	}
+
+}

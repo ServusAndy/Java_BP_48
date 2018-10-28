@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+/Users/gregorysheygam/Google Drive/TelRanCourses/EclipseWorkspace/Java_3_Haifa/.metadata/.plugins/org.eclipse.jdt.core
+2408881664.index
+175254138.index
+1066376396.index
+1818249163.index

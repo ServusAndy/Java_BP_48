@@ -1,0 +1,16 @@
+
+public class TestString {
+
+	public static void main(String[] args) {
+		String str = "Hello";
+		String str1 = "Hel" + "lo";
+		String str2 = "He" + "llo";
+		System.out.println(str == str1);
+		System.out.println(str2 == str);
+		
+		str += " world";
+		str2 += " world";
+		System.out.println(str == str2);
+	}
+
+}

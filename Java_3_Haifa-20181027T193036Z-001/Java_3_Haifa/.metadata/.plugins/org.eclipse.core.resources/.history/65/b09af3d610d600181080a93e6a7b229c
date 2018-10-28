@@ -1,0 +1,18 @@
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Integer number = new Integer(23);
+		Integer number2 = 54;
+		int res = number + number2;
+		System.out.println(res);
+		
+		Integer a = 56;
+		Integer b = 56;
+		boolean result = a > b;
+		System.out.println(result);
+
+	}
+
+}

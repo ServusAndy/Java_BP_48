@@ -1,0 +1,34 @@
+
+public class TestString {
+
+	public static void main(String[] args) {
+		String str = "Hello";
+		String str1 = "Hel" + "lo";
+		String str2 = "He" + "llo";
+		System.out.println(str == str1);
+		System.out.println(str2 == str);
+		
+		str += " world";
+		str2 += " world";
+		System.out.println(str == str2);
+		Person p = new Person();
+		p.name = "Hello";
+		System.out.println(str1 == p.name);
+		
+		String str3 = "Java";
+		String str4 = new String("Java").intern();
+		String str5 = "JAVA";
+		
+		System.out.println(str3 == str4);
+		System.out.println(str3 == str4.intern());
+		
+		System.out.println(str3.length());
+		System.out.println(str3.charAt(2));
+		System.out.println(str3.equals(str5));
+		System.out.println(str3.equalsIgnoreCase(str5));
+		System.out.println(str3.toUpperCase());
+		System.out.println(str4.toLowerCase());
+		System.out.println(str3.contains("av"));
+	}
+
+}

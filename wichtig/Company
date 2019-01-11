@@ -1,0 +1,64 @@
+package com.telran.logic;
+
+import com.telran.data.IEmployee;
+
+public class Company implements ICompany{
+	private String name;
+	private IEmployee[] employees;
+	private int count;
+	
+	public Company(String name) {
+		this.name = name;
+		employees = new IEmployee[10];
+		count = 0;
+	}
+	
+	
+
+	@Override
+	public void add(IEmployee empl) {
+		if(count < employees.length && indexOf(empl) < 0) {
+			employees[count] = empl;
+			count++;
+		}
+		
+	}
+	
+	public int indexOf(IEmployee empl) {
+		for(int i = 0 ; i < count; i++) {
+			if(employees[i].equals(empl)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	@Override
+	public IEmployee getEmployeeById(String id) {
+		for(int i = 0 ; i < count; i++) {
+			if(id.equals(employees[i].getId())) {
+				IEmployee empl = employees[i];
+				return empl;
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public void remove(IEmployee empl) {
+		
+		
+	}
+
+	@Override
+	public void remove(String id) {
+		
+		
+	}
+
+	@Override
+	public void printCompany() {
+				
+	}
+
+}

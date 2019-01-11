@@ -1,0 +1,13 @@
+for (int i = 0; i < persons.length; i++) {
+
+			if (type == "Manager") {
+				persons[i]=p.Manager;
+				System.out.println("	" + persons[i]);
+			} else if (type == "Employee") {
+				System.out.println();
+			} else if (type == "WageEmployee") {
+				System.out.println();
+			} else {
+				System.out.println("this type not exist!");
+			}
+		}

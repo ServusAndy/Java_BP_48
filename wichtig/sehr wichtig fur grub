@@ -1,0 +1,3 @@
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash pci=noaer"
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"

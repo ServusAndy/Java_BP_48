@@ -1,0 +1,66 @@
+/*
+	 public void add(T data) {
+		    Node<T> node = new Node<T>(data);
+		    
+		    if(head == null) {
+		      head = node;
+		      tail = node;     //теперь этот Нод будет хвостом
+		      size++;
+
+		    }else {
+		      tail.setNext(node); //хвосту даем ссылку на следующего
+		      node.setPrev(tail); //ссылка этого нода на предыдущего
+		      tail = node;     //теперь этот Нод будет хвостом
+		      size++;
+		    }
+
+		  }
+	 
+		  public void addLast(T data) {
+		    add(data);
+		    
+		  }
+		  
+		  public void addFirst(T data) {
+		    Node<T> node = new Node<T>(data);
+		    if(head == null) {
+		      head = node;    //тут в head стает node который приходит
+		      tail = node;    //тут в хвост ставится этот же нод,то есть когда он один
+		      size++;
+		    }else {
+		      head.setPrev(node);  //тут мы говорим что голова теперь этот Node
+		      node.setNext(head);  //тут мы говорим что прошлый head , теперь идет после нашего нода
+		      head = node;     // тут мы говорим что этот нод теперь голова
+		      size++;       //size просто счетчик количества нодов
+		    }
+		    
+		  }
+		  
+		  private Node<T> getNodeByIndex(int index){
+		    if(index < 0 || index >= size) {
+		      return null;
+		    }
+		    Node<T> result = head;
+		    int counter = 0;
+		    while(counter < index) {
+		      result = result.getNext();
+		      counter++;
+		    }
+		    return result;
+		  }
+		  
+		  public T get(int index) {
+		    Node<T> found = getNodeByIndex(index);
+		    return found == null ? null : found.getData();
+		  }
+		  
+		  public int size() {
+		    return size;
+		  }
+		  
+		  //Home Work
+		  // boolean set(int index, T data)
+		  // improve getNodeByIndex(int index)
+		  // boolean add(int index, T data
+		  */
+		

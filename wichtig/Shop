@@ -1,0 +1,78 @@
+package com.telran.logic;
+
+import com.telran.data.Owner;
+import com.telran.data.Transport;
+
+public class Shop {
+	private String name;
+	private Transport[] tr;
+	private int count;
+
+	public Shop(String name, int capacity) {
+		super();
+		this.name = name;
+		tr = new Transport[capacity];
+		count = 0;
+	}
+
+	public void addTransport(Transport t) {
+		if (count == tr.length) {
+			Transport[] tmp = new Transport[tr.length * 2];
+			for (int i = 0; i < tr.length; i++) {
+				tmp[i] = tr[i];
+			}
+			tr = tmp;
+		}
+		if (indexOf(t) < 0) {
+			tr[count] = t;
+			count++;
+		}
+	}
+
+	public int indexOf(Transport t) {
+		for (int i = 0; i < count; i++) {
+			if (tr[i].equals(t)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public void remove(Transport t) {
+		int indx = indexOf(t);
+		if (indx >= 0) {
+			for (; indx < count; indx++) {
+				tr[indx] = tr[indx + 1];
+			}
+			count--;
+		}
+	}
+
+	public void sale(Transport t, Owner o) {
+		for (int i = 0; i < count; i++) {
+			if (tr[i].equals(t)) {
+				t.setOwner(o.getName());
+			}
+		}
+	}
+
+	public void printSaleCars() {
+		System.out.println(
+				"============================================" + name + "=======================================");
+		for(int i = 0; i < count; i++) {
+			if(tr[i].getOwner() != "no owner") {
+				System.out.println(tr[i]);
+			}
+		}
+	}
+
+	public void printAllCars() {
+		System.out.println(
+				"=======================================" + name + "============================================");
+		for (int i = 0; i < count; i++) {
+			System.out.println(tr[i]);
+
+		}
+
+	}
+}

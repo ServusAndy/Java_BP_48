@@ -1,0 +1,46 @@
+package com.exemple.z;
+
+import java.util.ArrayList;
+
+import com.exemple.x.Book;
+import com.exemple.x.HomeBook;
+import com.exemple.x.LibraryBook;
+import com.exemple.x.Magazine;
+
+public class Library {
+	private String name;
+	private ArrayList<Book> books;
+	private int count;
+
+	public Library(String name, int capacity) {
+		this.name = name;
+		books = new ArrayList<Book>();
+		count = 0;
+	}
+
+	public void addBook(Book b) {
+		for(int i = 0; i < books.indexOf(b); i++) {
+			books.add(i, b);
+		}
+		
+	}
+	
+	public int indexOf(Book b) {
+		for(int i = 0 ; i <count; i++) {
+			if(books.equals(b)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	public void display() {
+		for(int i = 0; i < books.; i++) {
+			System.out.println(books.get(i));
+		}
+	}
+
+
+
+}
+

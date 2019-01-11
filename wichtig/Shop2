@@ -1,0 +1,41 @@
+public void printAllCarsAndBikes(String type) {
+		System.out.println(
+				"=======================================" + name + "============================================");
+		for (int i = 0; i < count; i++) {
+			switch (type) {
+			case "Cars":
+				if (tr[i] instanceof Car) {
+					System.out.println(tr[i]);
+					break;
+				}
+			case "Bikes":
+				if (tr[i] instanceof Bike) {
+					System.out.println(tr[i]);
+					break;
+				}
+			}
+		}
+	}
+
+	public void printSaleCarsAndBikes(String type) {
+		System.out.println(
+				"============================================" + name + "=======================================");
+		for (int i = 0; i < count; i++) {
+			switch (type) {
+			case "Cars":
+				if (tr[i] instanceof Car) {
+					if (!("no owner".equals(tr[i].getOwner()))) {
+						System.out.println(tr[i]);
+						break;
+					}
+				}
+			case "Bikes":
+				if (tr[i] instanceof Bike) {
+					if (!("no owner".equals(tr[i].getOwner()))) {
+						System.out.println(tr[i]);
+						break;
+					}
+				}
+			}
+		}
+	}

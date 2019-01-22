@@ -1,0 +1,46 @@
+HOME WORK!Implement all classes using encapsulation, polymorphism and inheritance!
+class Product
+String name;
+int id;
+double price;
+double length;
+double height;
+double width;
+
+2 constructors (default and by all fields)
+
+methods:String toString(); // format example --> id: 123456789 name: Note 4 price: 3100.0 c.u. size: 153.5 x 78.6 x 8.5 mmboolean equals(Object obj); 
+//two products equals if their id equalsclass Phone extends Product String os;
+
+//operation system (iOS,Android etc);2 constructors (default and by all fields)String toString(); 
+
+// format example -->Phone id: 123456789 name: Note 4 price: 3100.0 c.u. size: 153.5 x 78.6 x 8.5 mm OS:Androidclass Leptop extends ProductString processor;
+
+//Intel, AMD etc2 constructors (default and by all fields)String toString();
+
+ // format example -->Leptop id: 123456789 name: Note 4 price: 3100.0 c.u. size: 153.5 x 78.6 x 8.5 mm processor:IntelClass TV extends Productboolean isSmart;
+
+//2 constructors (default and by all fields)String toString();
+
+ // format example -->Leptop id: 123456789 name: Note 4 price: 3100.0 c.u. size: 153.5 x 78.6 x 8.5 mm smart: yes; 
+
+class TestProduct 
+
+public static void main(String[] args){
+Product[] products = new Product[10];
+Phone ph1 = new Phone(...);
+Phone ph2 = new Phone(...);
+Leptop lp1 = new Leptop(...);Leptop lp2 = new Leptop(...);
+TV tv1 = new TV(...);
+TV tv2 = new TV(...);
+product[0] = ph1;
+product[1] = lp1;
+product[2] = tv1;
+product[3] = ph2;
+product[4] = lp2;
+product[5] = tv2;
+printProducts(products, “All”);//print all products in array without null objectsSystem.out.println(“-----------“);printProducts(products, “Phone”);
+//print only phones in array without null objectsSystem.out.println(“-----------“);printProducts(products, “TV”);
+//print only tv’s in array without null objectsSystem.out.println(“-----------“);printProducts(products, “Leptop”);
+//print only leptops in array without null objects}public static void printProducts(Product[] products, String type){
+//Implements business logic}

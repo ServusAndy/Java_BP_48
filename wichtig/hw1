@@ -1,0 +1,10 @@
+HOME WORKImplement function boolean isPasswordValid()password is valid if:
+1. Length 8 or more symbols
+2. Contains one or more uppercase letter
+3. Contains one or more lower case letter
+4. Contains one or more digit
+5. Contains one or more special symbols from set ("-", "_", "$", "!", "@")
+
+*Additional task
+
+*Think about method for put result of all checks in one variable, for analyse which checks was wrong.

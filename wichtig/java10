@@ -1,0 +1,13 @@
+07_01_19
+
+
+BridgeMethod()  // dlya sovmestimosti so starimi versiami java
+
+ListIterator !!!!!!??????
+
+          (unchecked - непроверенный) Error
+ Ttowable
+          (checked - проверено) Exception
+
+stackTrace begin tam gte sosdan Z.B : Exception e = new Exception();
+

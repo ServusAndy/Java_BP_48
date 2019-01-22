@@ -1,0 +1,13 @@
+26_11_18
+
+Anonimus class
+
+lamda virajenie
+
+
+
+HW:
+
+public class MyList implements List{
+metodi umpements
+}
